@@ -10,4 +10,4 @@ CHECK { say "This is CHECK at pm6 file at $?LINE"; }
 
 ENTER { say "This is ENTER at pm6 file at $?LINE"; }
 
-our sub foo () is export { say "foo() called" }
+sub foo () is export { say "foo() called" }
