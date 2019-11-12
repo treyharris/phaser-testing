@@ -1,0 +1,15 @@
+#!/usr/bin/env perl6
+
+use TestPhasers;
+
+say "All done with $?FILE.";
+
+foo();
+
+END { say "This is END in script file at $?LINE"; }
+
+INIT { say "This is INIT in script file at $?LINE"; }
+
+CHECK { say "This is CHECK in script file at $?LINE"; }
+
+ENTER { say "This is ENTER in script file at $?LINE"; }
